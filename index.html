@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/navigation.css">
+  <title>Survey Form</title>
+</head>
+
+<style>
+  body {
+    font-family: sans-serif;
+    padding-left: 20%;
+    padding-right: 10PX;
+    background-image: url(img/pexels-rostislav-uzunov-5011647.jpg);
+    background-size: cover;
+
+
+  }
+
+  label {
+    font-size: 20px;
+    color: silver;
+  }
+
+  p {
+    font-style: italic;
+    color: silver;
+  }
+</style>
+</head>
+
+<body>
+
+  <script type="text/javascript" src=" https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" charset="utf-8"></script>
+
+  <h1 id="title"> Github Survey Form</h1>
+  <p id="description">This is a Survey where you can tell us about Github</p>
+  <form id="survey-form">
+    <label id="name-label">Name</label><br>
+    <input id="name" type="text" placeholder="Enter your name" name="name" required></input><br>
+    <label id="email-label">Email</label><br>
+    <input id="email" type="email" placeholder="Enter your Email" required></input><br>
+    <label id="number-label">Age</label><br>
+    <input type="number" name="age" id="number" min="10" max="99" placeholder="Age"></input><br>
+    <p>Which option best describes what you use Github to perform?</p>
+    <select id="dropdown" name="applications">
+      <option value="collaborative coding">Collaborative Coding</option>
+      <option value="security">Security</option>
+      <option value="client apps">Client Apps</option>
+      <option value="project management">Project Management</option>
+      <option value="team administration">Team Administration</option>
+      <option value="other">Other</option>
+    </select>
+    <p>How often do you use Github?</p>
+
+    <input type="radio" name="user-recommend" value="everyday">Everyday<br>
+    <input type="radio" name="user-recommend" value="sometimes">Sometimes<br>
+    <input type="radio" name="user-recommend" value="never">Never<br>
+
+    <p>What do you like most about Github?</p>
+    <input type="checkbox" name="softaware" value="yes">Software<br>
+    <input type="checkbox" name="support" value="yes">Support<br>
+    <input type="checkbox" name="collaboration" value="yes">Callaboration<br>
+    <input type="checkbox" name="cloud storage" value="yes">Cloud Storage <br>
+
+    <p>Comments or suggestions</p><br>
+    <textarea placeholder="Enter text here"></textarea><br>
+    <input type="submit" id="submit" value="Submit">
+
+  </form>
+</body>
+
+
+
+
+
+
+</html>
